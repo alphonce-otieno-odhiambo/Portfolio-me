@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className='fixed z-20 bg-white w-full'>
+      <nav className='fixed z-20 bg-white w-full border-b-[2px] border-[color: bg-gray-500] '>
         <div className='w-full'>
           <div className='flex items-center h-20 w-full'>
               <div className='flex items-center sm:mx-10 md:mx-20 justify-between w-full'> 
@@ -55,9 +55,10 @@ function Navbar() {
                 **This section if for direct contacts via email 
                 */ }
                 <div className='flex justify-center items-center flex-shrink-0'>
-                    <h1 className='font-semibold text-lg cursor-pointer hidden md:block'>
+                   <a href='https://www.instagram.com/darc_40/'> <h1 className='font-semibold text-lg cursor-pointer hidden md:block'>
                       Say<span className='text-blue-600'>hi</span>
                     </h1>
+                    </a>
                 </div>
               </div>
 

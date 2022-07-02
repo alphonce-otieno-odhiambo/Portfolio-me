@@ -1,12 +1,15 @@
 import React from 'react';
-import { Element } from "react-scroll"
+import { Element } from "react-scroll";
+
+
+
+
 import Image from 'next/image';
-import bagger from "../public/icons/bagger.jpg"
-import car from "../public/icons/car.jpg"
-import des from "../public/icons/des.jpg"
-import foo from "../public/icons/foo.jpg"
-import plate from "../public/icons/plate.jpg"
-import eagle from "../public/icons/eagle.jpg"
+import cannect from "../public/icons/carnnect.png";
+import ig from "../public/icons/ig.png";
+import hotlineb from "../public/icons/hotlineb.png";
+import netflix from "../public/icons/netflix.png";
+import design from "../public/icons/design.png";
 
 function work() {
   return (
@@ -14,61 +17,70 @@ function work() {
    id='work'
    name='work'
    >
-       <div className=' w-full my-20 h-auto flex flex-col items-center justify-center'>
-            <p className='text-sm uppercase text-gray-400'>Portfolio</p>
-            <h2 className='text-indigo-900 text-6xl font-bold text-bold'>All creative Work</h2>
-            <div className='md:flex sm:flex-col md:flex-row justify-center items-center gap-10 mt-10'>
-                <div className='rounded w-80 h-60 shadow-xl relative'>
-                    <Image 
-                        src={bagger}  
-                        alt='bagger'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
+       <div>
+            <div className='w-full my-20 h-auto flex flex-col justify-center items-center'>
+                <p className='text-gray-500 uppercase font-bold'>projects</p>
+                <h1 className='text-indigo-900 text-6xl font-bold text-center'>My Creative Work</h1>
+                <div className='flex justify-between text-center mx-20 my-10 md:gap-10 space-x-4'>
+                    <div className='flex justify-center cursor-pointer p-4 '>
+                   <a href='https://carnnect.herokuapp.com/accounts/login/?next=/'>
+                   <Image
+                    src={cannect} alt='css'
+                    layout='fixed'
+                    objectFit='contain'
+                    height={250}
+                    width={250}
+                    className='sm:h-3 sm:w-3 w-6 h-6 md:m-3 p-2 border-2
+                    border-black m-2 hover:scale-105 transition transform duration-200 ease-out '
+                    /></a> 
+                    <a href='https://instagram-c9zmp5lix-odhiamboalphonce23-gmailcom.vercel.app/'>
+                        <Image
+                    src={ig} alt='css'
+                    layout='fixed'
+                    objectFit='contain'
+                    height={250}
+                    width={250}
+                    className='sm:h-3 sm:w-3 w-6 h-6 md:m-3 p-2 border-2 
+                    border-black m-2 hover:scale-105 transition transform duration-200 ease-out'
                     />
-                    <Image 
-                        src={car}  
-                        alt='car'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
+                    </a>
+                    <a href='https://hotlineblink.herokuapp.com/'>
+                        <Image
+                    src={hotlineb} alt='css'
+                    layout='fixed'
+                    objectFit='contain'
+                    height={250}
+                    width={250}
+                    className='sm:h-3 sm:w-3 w-6 h-6 md:m-3 p-2 border-2 
+                    border-black m-2 hover:scale-105 transition transform duration-200 ease-out'
                     />
-                    <Image 
-                        src={des}  
-                        alt='des'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
+                    </a>
+                    <a href='https://peaceful-brown-e4226c.netlify.app/'>
+                        <Image
+                    src={netflix} alt='css'
+                    layout='fixed'
+                    objectFit='contain'
+                    height={250}
+                    width={250}
+                    className='sm:h-3 sm:w-3 w-6 h-6 md:m-3 p-2 border-2 
+                    border-black m-2 hover:scale-105 transition transform duration-200 ease-out'
                     />
+                    </a>
+                    <a href='https://valentine-ochieng.github.io/Interior-Design-Website/'>
+                        <Image
+                    src={design} alt='css'
+                    layout='fixed'
+                    objectFit='contain'
+                    height={250}
+                    width={250}
+                    className='sm:h-3 sm:w-3 w-6 h-6 md:m-3 p-2 border-2 
+                    border-black m-2 hover:scale-105 transition transform duration-200 ease-out'
+                    />
+                    </a>
+                    </div>
                 </div>
             </div>
-            <div className='md:flex sm:flex-col md:flex-row justify-center items-start sm:gap-10 sm:pb-10 mt-10'>
-                <div className='rounded w-80 h-60 shadow-xl relative'>
-                    <Image 
-                        src={foo}  
-                        alt='foo'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
-                    />
-                    <Image 
-                        src={plate}  
-                        alt='plate'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
-                    />
-                    <Image 
-                        src={eagle}  
-                        alt='eagle'
-                        layout='fill'
-                        objectFit='cover'
-                        className='p-2 rounded cursor-pointer'                  
-                    />
-                </div>
-            </div>
-       </div>
-
+        </div>
    </Element>
   )
 }

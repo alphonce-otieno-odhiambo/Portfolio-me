@@ -5,7 +5,7 @@ import { FaAmazon} from "react-icons/fa";
 import { FaDropbox} from "react-icons/fa";
 import { FaMicrosoft} from "react-icons/fa";
 import { FaApple} from "react-icons/fa";
-
+import { } from "react-icons/fa";
 function clients() {
   return (
     <Element id='Clients' name='Clients'>
